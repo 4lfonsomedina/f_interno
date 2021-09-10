@@ -1,0 +1,19 @@
+$QUELLE
+
+PNUM,  6, N, 0, 1 /*Codigo de producto*/
+PLTE, 60, C, 0, 1 /*Descripción*/
+KLAR,  1, N, 0, 1 /*Peso 0 o Pieza 1*/
+GPR1,  6, N, 0, 1 /*Precio Normal*/
+WALO,  1, N, 0, 1 /*Alta 0 o Baja 1*/
+cr,    1, S, 0, 1, 13
+eol,   1, S, 0, 1, 10
+
+
+$SWZ
+
+$CODE
+ABNU = 1
+HBA1 = 5
+WGNU = 1
+MWNU = 1
+

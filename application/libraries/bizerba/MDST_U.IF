@@ -1,0 +1,19 @@
+$SWQ
+
+$ZIEL
+TABB, 4, C, 0, 1
+MDK1, 10, N, 0, 1
+MDK2, 5, N, 0, 1
+MDK3, 1, N, 0, 1
+MDLN, 1, N, 0, 1
+MTYP, 1, N, 0, 1
+MDAT, 10, C, 0, 1
+cr,    1, S, 0, 1, 13
+eol,   1, S, 0, 1, 10
+
+
+
+$CODE
+
+
+

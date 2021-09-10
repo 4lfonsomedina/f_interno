@@ -1,0 +1,396 @@
+/****************************************************************************
+/* SWC_VOR.DAT **                Stand: 01.07.92
+/***************  Vorschriften-Datei fuer SWC_BAT fÅr CWS
+/*
+/*  Aufbau dieser Datei:
+/*  TYP SCHLUESSEL-KOMMANDO [sub-kommando_1] [sub-kommando_2] [sub-kommando_n]
+/*
+/* typ   = 1.Stelle im Satz   Subsystemtyp, fuer den Kommando gilt
+/*     z.B.  "C" = CLS 8000
+/*      "D" = DCS
+/*      "S" = SW-Waage
+/*      "A" = Preisauszeichner
+/*
+/* schluessel-kommando     wie in Anwender-Datei angegeben
+/*      "H name"    max. 14stellig (H ARTIKEL   )
+/*
+/* [sub-kommando_1]     Kommandos, die in Abhaengikeit
+/*        ---        nacheinander ausgefuehrt werden
+/* [sub-kommando_n]     sollen.
+/*
+/*     gueltige Sub-Kommandos:
+/* [L name]    loeschen Datei
+/****************************************************************************
+/*
+/* SW-Waage:
+/*
+S N INIT    [N INIT]        /* Test-Nachricht
+S N PROG    [N PROG]        /* GerÑte Programmstand anfordern
+S N TIME    [N TIME]        /* Timer fÅr HDLC-Protokoll und MenÅ
+S N WARE    [N WARE]        /* Wagenrefernzliste anfordern
+S N UHR     [N UHR]         /* Systemzeit Åbertragen */
+/*
+/* Hole Stammdaten
+/*
+S H ABST    [U ABST] [U ABST.IDX] [H ABST]        /* Abteilungs-Stammdaten
+S H ATST    [U ATST] [U ATST.IDX] [H ATST]        /* Allgemeine Texte
+S H BEST    [U BEST] [U BEST.IDX] [H BEST]        /* Verkaeufer Stammdaten
+S H COST    [U COST] [U COST.IDX] [H COST]        /* Codestruktur Stammdaten
+S H FWST    [U FWST] [U FWST.IDX] [H FWST]        /* FremdwÑhrungsstammdaten
+S H FUCO    [U FUCO] [U FUCO.IDX] [H FUCO]        /* Tasten-Funktionscode (lokal)
+S H FUCN    [U FUCN] [U FUCN.IDX] [H FUCN]        /* Tasten-Funktionscode SC (lokal)
+S H FUGL    [U FUGL] [U FUGL.IDX] [H FUGL]        /* Tasten-Funktionscode (global)
+S H HAST    [U HAST] [U HAST.IDX] [H HAST]        /* Hauptabteilungsstammdaten
+S H HWST    [U HWST] [U HWST.IDX] [H HWST]        /* Hauptwarengruppenstammdaten
+S H KATA    [U KATA] [U KATA.IDX] [H KATA]        /* Inhaltsverzeichnis der angelegten Tabellen (lokal)
+S H KFGL    [U KFGL] [U KFGL.IDX] [H KFGL]        /* Konfigurationstabelle (lokal)
+S H KFLO    [U KFLO] [U KFLO.IDX] [H KFLO]        /* Konfigurationstabelle (lokal)
+S H KFST    [U KFST] [U KFST.IDX] [H KFST]        /* Kopf- Fusszeilen
+S H KFTF    [U KFTF] [U KFTF.IDX] [H KFTF]        /* Tasten- Funktionscode Zuweisung (lokal)
+S H LAST    [U LAST] [U LAST.IDX] [H LAST]        /* Laufschrift
+S H LWST    [U LWST] [U LWST.IDX] [H LWST]        /* LandeswÑhrungsstammdaten
+S H MAST    [U MAST] [U MAST.IDX] [H MAST]        /* Makro- Stammdaten
+S H MWST    [U MWST] [U MWST.IDX] [H MWST]        /* MWST- Stammdaten
+S H PLSF    [U PLSF] [U PLSF.IDX] [H PLSF]        /* PLU- Preisstaffel
+S H PLST    [U PLST] [U PLST.IDX] [H PLST]        /* PLU- Stammdaten
+S H MDST    [U MDST] [U MDST.IDX] [H MDST]        /* imagenes
+S H KAST    [U KAST] [U KAST.IDX] [H KAST]     /* Kassen - Stammdaten
+S H KASF    [U KASF] [U KASF.IDX] [H KASF]     /* Kassen - Preisstaffeln
+S H PLSO    [U PLSO] [U PLSO.IDX] [H PLSO]        /* PLU- Sortiment
+S H SCST    [U SCST] [U SCST.IDX] [H SCST]        /* Scanning-Tabelle
+S H TARA    [U TARA] [U TARA.IDX] [H TARA]        /* Tara Stammdaten
+S H TRST    [U TRST] [U TRST.IDX] [H TRST]        /* Terminstufen
+S H WGST    [U WGST] [U WGST.IDX] [H WGST]        /* Warengruppenstammdaten
+S H ZAST    [U ZAST] [U ZAST.IDX] [H ZAST]        /* Zu- und Abschlaege Stammdaten
+S H ZEIT    [U ZEIT] [U ZEIT.IDX] [H ZEIT]        /* Zeitstufen Stammdaten
+S H ETST    [U ETST] [U ETST.IDX] [H ETST]        /* Etikettenlayouts
+S H FEST    [U FEST] [U FEST.IDX] [H FEST]        /* Frequenz-Stammdaten rev. 2.50
+S H FOST    [U FOST] [U FOST.IDX] [H FOST]        /* Etikettenformulare
+S H LOST    [U LOST] [U LOST.IDX] [H LOST]        /* LOGOS
+S H REST    [U REST] [U REST.IDX] [H REST]        /* Regionen
+S H KUST    [U KUST] [U KUST.IDX] [H KUST]        /* Kunden
+S H ZEST    [U ZEST] [U ZEST.IDX] [H ZEST]        /* Zeitabrechnung
+S H AWST    [U AWST] [H AWST]                     /* AuswertezÑhler
+S H ZAHL    [U ZAHL] [U ZAHL.IDX] [H ZAHL]        /* Zahlarten
+S H LZST    [U LZST] [U LZST.IDX] [H LZST]        /* Zeitabrechnung
+S H TREU    [U TREU] [U TREU.IDX] [H TREU]        /* Treuepunkte
+S H VAST    [U VAST] [U VAST.IDX] [H VAST]        /* Verbuchung/Auswertezugr.
+/*
+/*
+/* Hole UmsÑtze
+/*
+S N PARA    [N PARA]        /* Parameterstruktur
+/*
+S H ABUM    [U ABUM] [U ABUM.IDX] [HX ABUM]        /* Abt.-Umsatz
+S H BEUM    [U BEUM] [U BEUM.IDX] [HX BEUM]       /* Bediener-Umsatz
+S H HAUM    [U HAUM] [U HAUM.IDX] [HX HAUM]       /* Haupt.-Abt.-Umsatz
+S H WGUM    [U WGUM] [U WGUM.IDX] [HX WGUM]       /* WG-Umsatz
+S H FBUM    [U FBUM] [U FBUM.IDX] [HX FBUM]       /* Frequenzbericht-Umsatz
+S H FBUM2   [U FBUM2][U FBUM2.IDX][HX FBUM]       /* Frequenzbericht-Umsatz Periode 2
+S H FBUM3   [U FBUM3][U FBUM3.IDX][HX FBUM]       /* Frequenzbericht-Umsatz Periode 3
+S H FBUM4   [U FBUM4][U FBUM4.IDX][HX FBUM]       /* Frequenzbericht-Umsatz Periode 4
+S H HWUM    [U HWUM] [U HWUM.IDX] [HX HWUM]       /* HWG-Umsatz
+S H MWUM    [U MWUM] [U MWUM.IDX] [HX MWUM]       /* Mehrwertst.-Umsatz
+S H PLUM    [U PLUM] [U PLUM.IDX] [HX PLUM]       /* PLU-Umsatz
+S H EAUM    [U EAUM] [U EAUM.IDX] [HX EAUM]       /* EAN-Umsatz neu f¸r SC
+S H TRAI    [U TRAI] [U TRAI.IDX] [HX TRAI]       /* Trainings-Umsatz
+S H KAUM    [U KAUM] [U KAUM.IDX] [HX KAUM]       /* Kassen-Umsatz
+S H KSUM    [U KSUM] [U KSUM.IDX] [HX KSUM]       /* Wassierer-Umsatz
+S H BOKA    [HX BOKA]                             /* BON-Daten
+S H LOGB    [U LOGB] [U LOGB.IDX] [HX LOGB]       /* LOGBUCH-Daten
+S H ZAUM    [U ZAUM] [U ZAUM.IDX] [HX ZAUM]       /* Wassierer-Umsatz
+S H TPUM    [U TPUM] [U TPUM.IDX] [HX TPUM]       /* Wassierer-Umsatz
+/*
+/*
+/* Hole Diagnose
+/*
+S H DIAG    [HX DIAG]                             /* Diagnose (auf EURO umstellen)
+/*
+/* Sende Stammdaten
+/*
+S S ABST    [SL ABST]        /* Abteilungs-Stammdaten
+S S ATST    [SL ATST]        /* Allgemeine Texte
+S S BEST    [SL BEST]       /* Verkaeufer Stammdaten
+S S COST    [SL COST]    /* Codestruktur Stammdaten
+S S FUCO    [SL FUCO]        /* Tasten-Funktionscode (lokal)
+S S FUCN    [SL FUCN]        /* Tasten-Funktionscode SC (lokal)
+S S FUGL    [SL FUGL]      /* Tasten-Funktionscode (global)
+S S FWST    [SL FWST]     /* FremdwÑhrungsstammdaten
+S S HAST    [SL HAST] /* Hauptabteilungsstammdaten
+S S HWST    [SL HWST]     /* Hauptwarengruppenstammdaten
+S S KFGL    [SL KFGL]    /* Konfigurationstabelle (lokal)
+S S KFLO    [SL KFLO]     /* Konfigurationstabelle (lokal)
+S S KFST    [SL KFST]    /* Kopf- Fusszeilen
+S S KFTF    [SL KFTF]    /* Tasten- Funktionscode Zuweisung (lokal)
+S S LAST    [SL LAST]       /* Laufschrift
+S S LWST    [SL LWST]     /* LandeswÑhrungsstammdaten
+S S MAST    [SL MAST]  /* Makro- Stammdaten
+S S MWST    [SL MWST]      /* MWST- Stammdaten
+S S PLSF    [SL PLSF]       /* PLU- Preisstaffel
+S S PLST    [SL PLST]   /* Kassen - Stammdaten
+S S KATA    [SL KATA]
+S S KASF    [SL KASF]     /* Kassen - Preisstaffeln
+S S PLSO    [SL PLSO]       /* PLU- Sortiment
+S S SCST    [SL SCST]      /* Scanning-Tabelle
+S S TARA    [SL TARA]       /* Tara Stammdaten
+S S TRST    [SL TRST]      /* Terminstufen
+S S WGST    [SL WGST]     /* Warengruppenstammdaten
+S S ZAST    [SL ZAST]      /* Zu- und Abschlaege Stammdaten
+S S ZEIT    [SL ZEIT]       /* Zeitstufen Stammdaten
+S S ETST    [SL ETST]       /* Etikettenlayouts
+S S FEST    [SL FEST]      /* Frequenz-Stammdaten rev. 2.50
+S S FOST    [SL FOST]      /* Etikettenformulare
+S S LOST    [SL LOST]      /* LOGOS
+S S REST    [SL REST]       /* Regionen
+S S KUST    [SL KUST]       /* Kunden
+S S LZST    [SL LZST]      /*
+S S TREU    [SL TREU]   /* Treuepunkte
+S S ZAHL    [SL ZAHL]      /* Zahlarten
+S S VAST    [SL VAST]       /* Verbuchung/Auswertezugr.
+S S MDST    [SL MDST]       /* IMAGENES
+/*
+/* Sende Stammdaten ohne nachfolgendem lîschen
+/*
+/*
+S S ABSTO    [S ABST]        /* Abteilungs-Stammdaten
+S S ATSTO    [S ATST]        /* Allgemeine Texte
+S S BESTO    [S BEST]        /* Verkaeufer Stammdaten
+S S COSTO    [S COST]        /* Codestruktur Stammdaten
+S S FUCOO    [S FUCO]        /* Tasten-Funktionscode (lokal)
+S S FUCNO    [S FUCN]        /* Tasten-Funktionscode SC (lokal)
+S S FUGLO    [S FUGL]        /* Tasten-Funktionscode (global)
+S S FWSTO    [S FWST]        /* FremdwÑhrungsstammdaten
+S S HASTO    [S HAST]        /* Hauptabteilungsstammdaten
+S S HWSTO    [S HWST]        /* Hauptwarengruppenstammdaten
+S S KFGLO    [S KFGL]        /* Konfigurationstabelle (lokal)
+S S KFLOO    [S KFLO]        /* Konfigurationstabelle (lokal)
+S S KFSTO    [S KFST]        /* Kopf- Fusszeilen
+S S KFTFO    [S KFTF]        /* Tasten- Funktionscode Zuweisung (lokal)
+S S LASTO    [S LAST]        /* Laufschrift
+S S LWSTO    [S LWST]        /* LandeswÑhrungsstammdaten
+S S MASTO    [S MAST]        /* Makro- Stammdaten
+S S MWSTO    [S MWST]        /* MWST- Stammdaten
+S S PLSFO    [S PLSF]        /* PLU- Preisstaffel
+S S PLSTO    [S PLST]        /* PLU- Stammdaten
+S S KASTO    [S KAST]      /* Kassen - Stammdaten
+S S KASFO    [S KASF]      /* Kassen - Preisstaffeln
+
+S S PLSOO    [S PLSO]        /* PLU- Sortiment
+S S SCSTO    [S SCST]        /* Scanning-Tabelle
+S S TARAO    [S TARA]        /* Tara Stammdaten
+S S TRSTO    [S TRST]        /* Terminstufen
+S S WGSTO    [S WGST]        /* Warengruppenstammdaten
+S S ZASTO    [S ZAST]        /* Zu- und Abschlaege Stammdaten
+S S ZEITO    [S ZEIT]        /* Zeitstufen Stammdaten
+S S ETSTO    [S ETST]        /* Etikettenlayouts
+S S FESTO    [S FEST]        /* Frequenz-Stammdaten rev. 2.50
+S S FOSTO    [S FOST]        /* Etikettenformulare
+S S LOSTO    [S LOST]        /* LOGOS
+S S RESTO    [S REST]        /* Regionen
+S S KUSTO    [S KUST]        /* Kunden
+S S LZSTO    [S LZST]        /*
+S S TREUO    [S TREU]        /* Treuepunkte
+S S ZAHLO    [S ZAHL]        /* Zahlarten
+
+/*
+/* Lîsche Stammdaten
+/*
+S L ABST    [LL ABST]   /* Abteilungs-Stammdaten
+S L ATST    [LL ATST]       /* Allgemeine Texte
+S L BEST    [LL BEST]       /* Verkaeufer Stammdaten
+S L COST    [LL COST]       /* Codestruktur Stammdaten
+S L FUCO    [LL FUCO]       /* Tasten-Funktionscode (lokal)
+S L FUCN    [LL FUCN]    /* Tasten-Funktionscode SC (lokal)
+S L FUGL    [LL FUGL]      /* Tasten-Funktionscode (global)
+S L FWST    [LL FWST]     /* FremdwÑhrungsstammdaten
+S L HAST    [LL HAST]    /* Hauptabteilungsstammdaten
+S L HWST    [LL HWST]      /* Hauptwarengruppenstammdaten
+S L KFGL    [LL KFGL]      /* Konfigurationstabelle (lokal)
+S L KFLO    [LL KFLO]       /* Konfigurationstabelle (lokal)
+S L KFST    [LL KFST]     /* Kopf- Fusszeilen
+S L KFTF    [LL KFTF]        /* Tasten- Funktionscode Zuweisung (lokal)
+S L LAST    [LL LAST]       /* Laufschrift
+S L LWST    [LL LWST]        /* LandeswÑhrungsstammdaten
+S L MAST    [LL MAST]        /* Makro- Stammdaten
+S L MWST    [LL MWST]        /* MWST- Stammdaten
+S L PLSF    [LL PLSF]        /* PLU- Preisstaffel
+S L PLST    [LL PLST]        /* PLU- Stammdaten
+S L KAST    [LL KAST]    /* Kassen - Stammdaten
+S L KASF    [LL KASF]     /* Kassen - Preisstaffeln
+S L PLSO    [LL PLSO]       /* PLU- Sortiment
+S L SCST    [LL SCST]       /* Scanning-Tabelle
+S L TARA    [LL TARA]        /* Tara Stammdaten
+S L TRST    [LL TRST]       /* Terminstufen
+S L WGST    [LL WGST]        /* Warengruppenstammdaten
+S L ZAST    [LL ZAST]       /* Zu- und Abschlaege Stammdaten
+S L ZEIT    [LL ZEIT]       /* Zeitstufen Stammdaten
+/*
+/*---------------------------------------------------------------------------
+/*---------------------------------------------------------------------------
+/*---------------------------------------------------------------------------
+/*---------------------------------------------------------------------------
+/*---------------------------------------------------------------------------
+/*---------------------------------------------------------------------------
+/*
+/* Preisauszeichner:
+/*
+A N TEST    [N TEST]                     /* Test-Nachricht
+A N INIT    [N INIT]                     /* Test-Nachricht
+A N PROG    [N PROG]                     /* GerÑte Programmstand anfordern
+A N PARA    [N PARA]                     /* Parameterstruktur (ab Gx 4.40)
+A N FILTER  [N FILTER]                   /* Filterdatei als Parastruktur (ab Gx 5.00)
+A N UHR     [N UHR]                      /* Systemzeit Åbertragen */
+A N TIME    [N TIME]                     /* Timer fÅr HDLC-Protokoll und MenÅ
+A N WARE    [N WARE]                     /* Wagenrefernzliste anfordern
+A N SUMDEL  [N SUMDEL]                   /* ale Artikelsummen lîschen
+A N DAWAI   [N DAWAI]                    /* Fehler-Code-Test */
+/*
+/* Hole Stammdaten aus der Datenbank
+/*
+A H PSTM    [H PSTM]                     /* PLU Stammdaten
+A H PSTMSM  [H PSTMSM]                   /* PLU-Umsatz mit lîschen
+A H PSTMSU  [H PSTMSU]                   /* PLU-Umsatz ohne lîschen
+A H PTEX    [H PTEX]                     /* PLU-Texte
+A H PCAB    [H PCAB]                     /* Codestrukturen
+A H PDTX    [H PDTX]                     /* Datumstexte
+A H PMIM    [H PMIM]                     /* MinMax-Tabelle
+A H PETI    [H PETI]                     /* Etikettenparameter
+A H AUTO    [H AUTO]                     /* plu-abhÑngige Automatendaten
+A H PACK    [H PACK]                     /* Verpackungs-Daten
+A H NUDA    [H NUDA]                     /* Nutrition-Daten
+A H MAKO    [H MAKO]                     /* Tastatur-Makros
+A H WERT    [H WERT]                     /* PrimÑr/SekundÑr Tabellen
+/*
+/* Diagnose-Funktion (nur holen)
+/*
+A H DIAG    [H DIAG]                     /* Diagnose-Telegramme (ab Gx 5.00)
+/*
+/* hole Resourcen
+/*
+A H FORA    [H FORA]                     /* feldinfos Kundenetiketten
+A H LAYA    [H LAYA]                     /* Layoutinfos Kundenetiketten
+A H FORAST  [H FORAST]                   /* feldinfos Standardetiketten
+A H LAYAST  [H LAYAST]                   /* Layoutinfos Standardetiketten
+A H LOGO    [H LOGO]                     /* Logos
+A H NUTR    [H NUTR]                     /* Nutrition-Beschreibung
+/*
+/* hole Benutzer-OberflÑche
+/*
+A H TXT1    [H TXT1]                     /* Bedientexte
+A H MENU    [H MENU]                     /* MenÅtexte
+/*
+/* hole Konfiguration
+/*
+A H KONF    [H KONF]                     /* Geraetekonfiguration
+A H KONFVP  [H KONFVP]                   /* Konfiguration Verpackungsmaschine
+A H KONFAM  [H KONFAM]                   /* Konfiguration Automat
+A H BDSK    [H BDSK]                     /* Benutzerdefinierte Softkeys
+A H STUP    [H STUP]                     /* GerÑte Setup
+/*
+/* hole leere Dateistrukturen
+/*
+A H PSTM00  [H PSTM00]                   /* PLU Stammdaten
+A H PTEX00  [H PTEX00]                   /* PLU-Texte
+A H PCAB00  [H PCAB00]                   /* Codestrukturen
+A H PDTX00  [H PDTX00]                   /* Datumstexte
+A H PMIM00  [H PMIM00]                   /* MinMax-Tabelle
+A H PETI00  [H PETI00]                   /* Etikettenparameter
+A H AUTO00  [H AUTO00]                   /* plu-abhÑngige Automatendaten
+A H PACK00  [H PACK00]                   /* Verpackungs-Daten
+A H NUDA00  [H NUDA00]                   /* Nutrition-Daten
+A H FORA00  [H FORA00]                   /* feldinfos Kundenetiketten
+A H LAYA00  [H LAYA00]                   /* Layoutinfos Kundenetiketten
+A H LOGO00  [H LOGO00]                   /* Logos
+A H NUTR00  [H NUTR00]                   /* Nutrition-Beschreibung
+A H TXT100  [H TXT100]                   /* Bedientexte
+A H MENU00  [H MENU00]                   /* MenÅtexte
+A H KONF00  [H KONF00]                   /* Geraetekonfiguration
+/*
+/* sonstiges ?
+/*
+A H KATA    [H KATA]                     /* Inhaltsverzeichnis der angelegten Tabellen (lokal)
+A H KNOT    [H KNOT]                     /* Knotenstruktur MenÅ
+A H AKTN    [H AKTN]                     /* Aktionstabelle MenÅ
+A H RHMN    [H RHMN]                     /* Feldrahmen
+A H KOPF    [H KOPF]
+A H LINE    [H LINE]
+A H LIST    [H LIST]
+A H LPTD    [H LPTD]
+A H LPTF    [H LPTF]
+A H LPTS    [H LPTS]
+/*
+/**************************************************************
+/*
+/* Sende Stammdaten zur Datenbank
+/*
+A S PSTM    [SL PSTM]  [FD ..\sw_zap PSTM]/* PLU-Stammdaten
+A R PSTM    [R PSTM]                      /* PLU-Stammdaten Replace (ab Gx 4.61)
+A S PTEX    [SL PTEX]  [FD ..\sw_zap PTEX]
+A S PCAB    [SL PCAB]  [FD ..\sw_zap PCAB]
+A S PDTX    [SL PDTX]  [FD ..\sw_zap PDTX]
+A S PMIM    [SL PMIM]  [FD ..\sw_zap PMIM]
+A S PETI    [SL PETI]  [FD ..\sw_zap PETI]
+A S AUTO    [SL AUTO]  [FD ..\sw_zap AUTO]
+A R AUTO    [R AUTO]                      /* Replace (ab Gx 4.61)
+A S PACK    [SL PACK]  [FD ..\sw_zap PACK]
+A R PACK    [R PACK]                      /* Replace (ab Gx 4.61)
+A S NUDA    [SL NUDA]  [FD ..\sw_zap NUDA]
+A S MAKO    [SL MAKO]  [FD ..\sw_zap MAKO]
+A S WERT    [SL WERT]  [FD ..\sw_zap WERT]
+/*
+/* sende Resourcen
+/*
+A S LAYA    [SL LAYA]  [FD ..\sw_zap LAYA]
+A S FORA    [SL FORA]  [FD ..\sw_zap FORA]
+A S LOGO    [SL LOGO]  [FD ..\sw_zap LOGO]
+A S NUTR    [SL NUTR]  [FD ..\sw_zap NUTR]
+/*
+/* sende Benutzer-OberflÑche
+/*
+A S TXT1    [SL TXT1]  [FD ..\sw_zap TXT1]
+A S MENU    [SL MENU]  [FD ..\sw_zap MENU]
+/*
+/* sende Konfiguration
+/*
+A S KONF    [SL KONF]  
+A S KONFAM  [SL KONFAM]
+A S KONFVP  [SL KONFVP]
+A S BDSK    [SL BDSK]  
+A S STUP    [SL STUP] 
+/*
+/* Sonstiges ?
+/*
+A S RHMN    [SL RHMN] 
+A S PSTMO   [S PSTM]
+A S PTEXO   [S PTEX]
+A S LAYAO   [S LAYA]
+A S FORAO   [S FORA]
+A S PETIO   [S PETI]
+A S LAYASTO [S LAYAST]
+A S FORASTO [S FORAST]
+A S KONFO   [S KONF]
+A S KONFAMO [S KONFAM]
+A S KONFVPO [S KONFVP]
+A S TXT1O   [S TXT1]
+A S MENUO   [S MENU]
+A S RHMNO   [S RHMN]
+A S LOGOO   [S LOGO]
+A S AUTOO   [S AUTO]
+A S LAYA99O [S LAYA99]
+A S FORA99O [S FORA99]
+A S PCABO   [S PCAB]
+A S PDTXO   [S PDTX]
+A S PMIM    [S PMIM]
+A S PACK    [S PACK]
+A S NUDA    [S NUDA]
+A S MAKO    [S MAKO]
+A S BDSK    [S BDSK]
+
+/*---------------------------------------------------------------------------
+
+/* CWSLINK
+
+L N QUIT    [N QUIT]                     /* Beende wartezustand
+L N DISC    [N DISC]                     /* Verbindung trennen
+
+

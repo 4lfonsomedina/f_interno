@@ -1,0 +1,27 @@
+0000010^7;INFORMACION NUTRICIONAL
+
+^6;Tamano Porcion 30g
+Porciones por envase 2
+
+^5;Proteinas 0g
+Azucares 0g
+Sodio 0g
+Fibra 0g                                                                                                                                                                                                                                                                                                                                                                                                
+0000020^7;INFORMACION NUTRICIONAL
+
+^6;Tamano Porcion 30g
+Porciones por envase 2
+
+^5;Proteinas 2g
+Azucares 2g
+Sodio 2g
+Fibra 2g
+0000030^7;INFORMACION NUTRICIONAL
+
+^6;Tamano Porcion 30g
+Porciones por envase 2
+
+^5;Proteinas 3g
+Azucares 3g
+Sodio 3g
+Fibra 3g                                                                                                                                                                                                                                                                                                                                                                                                                                                              

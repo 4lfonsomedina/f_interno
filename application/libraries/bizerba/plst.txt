@@ -1,0 +1,320 @@
+300001TOMATE PERA AMARILLO                                        10089500
+300002DATILES DEL DESIERTO SIN HUESO 300 GR.                      10059500
+300003AJO NEGRO KG                                                02050000
+300004CHOP SUEY BOLSA 340 GR.                                     10048500
+300005ARANDANOS OCEAN SPRAY ORIGINAL 340 GR                       10019500
+300006BLUEBERRY VALLEY (MORA AZUL) CAJITA 170 GR.                 10115000
+300007ESPINACA BOLSA 227 GR.                                      10066500
+300008HONGO BLANCO GOURMET 8/16 OZ                                10115000
+300009HONGO CRIMINI 170 GR                                        10069500
+300010HUITLACOCHE MONTE REY 350 GR.                               10045000
+300011JACK FRUIT COLIMAN VEGAN 227 GR.                            10064500
+300012CHICHARO EDAMAME SEAPOINT FARMS 397 GR.                     10068600
+300013MORRON MIXTO PLATO                                          00089000
+300014TOMATE KUMATO SUNSET SIMPLY UNUQUE 454 GR.                  10128500
+300015CRANBERRIES BOLSA 340 GR.                                   10024500
+300016ENSALADA FRESH EXPRESS GREEN CRISP 312 GR.                  10084500
+300017ENSALADA FRESH EXPRESS PREMIUM ROMAINE 255 GR.              10084500
+300018ENSALADA FRESH EXPRESS 3 COLOR DELI COLE SLAW 340 GR        10044500
+300019ENSALADA FRESH EXPRESS SPRING MIX 142 GR                    10089500
+300020ENSALADA FRESH EXPRESS KIT CAESAR 278 GR.                   10098500
+300021ENSALADA FRESH GOURMET ORGANIC BABY KALE 142 GR.            10086500
+300022LB. ENSALADA DOLE CESAR 6/215 GR                            10086500
+300023LB. ENSALADA DOLE SPRING MIX 6/142 GR                       10082500
+300024LB. ENSALADA DOLE GARDEN SALAD 340 GR.                      10056500
+300025ENSALADA READY PAC CLASSIC CAESAR 283 GR.                   10089500
+300026ENSALADA FRESH EXPRESS BABY KALE 141 GR.                    10089500
+300027ENSALADA FRESH EXPRESS ITALIANO 255 GR.                     10089500
+300028ENSALADA FRESH EXPRESS GARDEN 12 OZ                         10054500
+300029DATIL GOLDATE 650 GR                                        10110000
+300030ARROZ A GRANEL                                              00022500
+300031LIMON VERDE COLIMA                                          00036500
+300032MAIZ BLANCO                                                 00042500
+300033MAIZ DE POLLO                                               00020000
+300034MANDARINA MURCOT HONEY KG.                                  00062500
+300035MANDARINA SATSUMA KG.                                       00088500
+300036MANGO ATAULFO                                               00169000
+300037MANGO BOLA TOMY                                             00115000
+300038MANGO HAYDEN                                                00072500
+300039MANZANA GOLDEN NO. 125                                      00054500
+300040HIGO DESHIDRATADO KG.                                       00335000
+300041MANZANA ROJA CHICA NUM. 125                                 00054500
+300042CHILE CORITA SECO                                           00145000
+300043MANZANA VERDE # 125                                         00052500
+300044MELON BLANCO HONEYDEW                                       00056500
+300045MELON CHINO                                                 00086500
+300046NAPA KG                                                     00052500
+300047LINAZA ENTERA AGRANEL                                       00044500
+300048NARANJA NAVEL USA CHICA 113/138                             00048500
+300049ARANDANO OCEAN SPRAY CHAROLA                                00235000
+300050BERENJENA                                                   00088500
+300051NARANJA MEXICANA SIN SEMILLA                                00044500
+300052NECTARIN KG.                                                00145000
+300053NOPAL BOLSA                                                 10018500
+300054NUEZ PAPEL PELADO                                           00485000
+300055PAPA BLANCA                                                 00054500
+300056PAPA CAMBRAY ROJA                                           00098500
+300057PAPA MORENA                                                 00020500
+300058PAPAYA KG.                                                  00034500
+300059UVA PASA                                                    00075000
+300060BERRO                                                       10062500
+300061PEPINO                                                      00019500
+300062PERA BARLETT NUM. 120                                       00079500
+300063PERA ANGEL NUM 120                                          00069500
+300064PEREJIL CHINO                                               10012500
+300065PILONCILLO                                                  00048500
+300066DATIL COLORADO DATES ARTESANAL                              10135000
+300067PLATANO PORTALIMON                                          00029500
+300068PLATANO MACHO KG.                                           00039500
+300069RABANO MEXICANO                                             10010000
+300070REPOLLO MORADO                                              00024500
+300071REPOLLO VERDE KG.                                           00014500
+300072SANDIA RAYADA SIN SEMILLA KG                                00023500
+300073SEMILLA DE GIRASOL                                          00059500
+300074TAMARINDO                                                   00042500
+300075BOK CHOY                                                    00064500
+300076TOMATE BOLA                                                 00019500
+300077TOMATE BULE                                                 00018500
+300078TOMATE CHERRY EMPACADO 310 GR.                              10085500
+300079TOMATILLO                                                   00021500
+300080TUNA VERDE                                                  00046500
+300081UVA NEGRA                                                   00129000
+300082RASPBERRY  (FRAMBUESA) DRISCOLLS 170 GR                     10110000
+300083UVA ROJA                                                    00165000
+300084BROCOLI MAZO N. 14                                          10024000
+300085VERDOLAGA                                                   10012500
+300086ZANAHORIA BABY PAQ. 454 GR.                                 10032500
+300087ZANAHORIA PAQUETE 1 LB                                      10018500
+300088ZANAHORIA SUELTA                                            00046500
+300089LECHUGA MANTEQUILLA                                         10034500
+300090ANISSE CON BULBO                                            10056500
+300091BROCOLI CORONA SUELTO                                       00029500
+300092LECHUGA RED LEAF                                            10046500
+300093LECHUGA GREEN LEAF                                          10032500
+300094ACELGA DE COLORES                                           10084500
+300095PEREJIL ITALIANO LISO                                       10012500
+300096ACELGA ROJA                                                 10058500
+300097ACELGA VERDE                                                10058500
+300098CACAHUATE CASCARA                                           00069500
+300099CHICHARO GORDO KG.                                          00225000
+300100POROS/LEEK                                                  10072500
+300101LECHUGA ENDIVIA                                             10038500
+300102LECHUGA ESCAROLA                                            10058500
+300103CALABAZA BLANCA                                             00024500
+300104ALCACHOFA BABY KG.                                          00255000
+300105HONGO JUMBO BLANCO                                          00250000
+300106HONGO SHITAKE                                               00385000
+300107HONGO OSTION                                                00395000
+300108HONGO PORTABELLO                                            00355000
+300109AGUACATE FLOR LOCA                                          00052500
+300110CALABAZA NEGRA                                              00076500
+300111TORONJA ROJA AMERICANA                                      00062500
+300112TEJOCOTE                                                    00054500
+300113CALABAZA ESTRELLA BABY AMARILLA KG.                         00295000
+300114CAMARON MOLIDO                                              00650000
+300115ALMENDRA REBANADA  X KILO                                   00310000
+300116ALBAHACA                                                    10014500
+300117OREGANO                                                     10020500
+300118TOMILLO/THYME                                               10019500
+300119CAMOTE AMERICANO JUMBO                                      00062500
+300120TUNA ROJA                                                   00048500
+300121SHALLOTS                                                    00135000
+300122BETABEL MAZO                                                10058500
+300123PINA MIEL GRANDE PZA                                        10056501
+300124CHILE MANZANO                                               00295000
+300125PAPA MORADA (PURPLE)                                        00069500
+300126CAMOTE AMERICANO MEDIANO KG                                 00062500
+300127PLATANO MANZANO                                             00048500
+300128CIRUELA SECA                                                00088500
+300129MAMEY                                                       00064500
+300130COCO LIMPIO                                                 10029500
+300131CANELA                                                      00695000
+300132SANDIA PICADA                                               10027500
+300133TOMATE C/RAMA ANARANJADO                                    00240000
+300134TOMATE C/RAMA AMARILLO                                      00185000
+300135CEBOLLA AMARILLA                                            00016500
+300136CEBOLLA BLANCA KG.                                          00016500
+300137HIERBABUENA                                                 10022500
+300138MANZANA GALA # 125                                          00052000
+300139MANZANA FUJI NUM 88                                         00052500
+300140HONGO PORTOBELLINI                                          00355000
+300141MANZANA KORU KG.                                            00052500
+300142MANZANA ROJA GRANDE                                         00069500
+300143TOMATE C/RAMA ROJO                                          00110000
+300144CEBOLLA MORADA                                              00022500
+300145CANA                                                        10024501
+300146HOJA PARA TAMAL X KILO                                      00290000
+300147AC. KALE                                                    10026500
+300148CEBOLLIN                                                    10008500
+300149CHILE HUNGARO                                               00029500
+300150UVA GLOBO                                                   00076500
+300151PLATANO DOMINICO                                            00048500
+300152ROMERITOS                                                   00195000
+300153CHILE HABANERO                                              00305000
+300154PAPA ROJA                                                   10049500
+300155CEBOLLIN CAMBRAY  MZ                                        00028500
+300156MORRON ROJO KG.                                             00105000
+300157MORRON AMARILLO KG.                                         10105000
+300158PEPINO PERSA CORAZON/ESTRELLA C/6 PZAS                      10084000
+300159VERDURA PARA CALDO                                          00069500
+300160CEREZA ROJA                                                 00145000
+300161PERA BOSCO                                                  00052500
+300162CHILE CALIFORNIA SECO                                       00195000
+300163CIRUELA ROJA                                                00138500
+300164CHILE PICO DE PAJARO SECO S/COLA                            00165000
+300165CHILE CALIFORNIA VERDE                                      10046500
+300166MEJORANA                                                    00023500
+300167CHILE MORITA                                                00195000
+300168CHILE GUAJILLO SECO                                         10165000
+300169TOMATE UVA ROJO PZA                                         00088500
+300170CHAYOTE CON ESPINAS                                         00062500
+300171MORRON ANARANJADO KG.                                       00105000
+300172GRANADA KG                                                  00115000
+300173CHILE GUERO                                                 10038500
+300174ROMERO                                                      10012500
+300175ENELDO/DILL                                                 10022500
+300176CHIVES                                                      00044500
+300177CHILE ARBOL FRESCO                                          10235001
+300178CHILE JALAPENO                                              00022000
+300179PAPA CAMBRAY BLANCA                                         00096500
+300180MEMBRILLO #1                                                00205000
+300181NARANJA NAVEL USA MEDIANA NUM. 72/88                        10048500
+300182TARRAGON                                                    10030000
+300183SALVIA/SAGE                                                 00024500
+300184CACAHUATE PELADO                                            00096500
+300185BOK CHOY BABY KG.                                           00062500
+300186TORONJA ROJA MEXICANA                                       00029500
+300187CALABAZA ITALIANA BABY                                      10245000
+300188ARUGULA                                                     10014500
+300189EPAZOTE                                                     10023500
+300190LAUREL                                                      00039500
+300191CALABAZA ESTRELLA BABY VERDE KG.                            00295000
+300192CURCUMA KG.                                                 00385000
+300193MORRON VERDE                                                00084500
+300194TORONJA PUMMELO KG.                                         10105000
+300195CHILE PASILLA NEGRO                                         00270000
+300196CHILE CASCABEL SECO                                         00345000
+300197AJO BLANCO                                                  00220000
+300198CHILE PASILLA SECO                                          00265000
+300199TOMATILLO GOSBERRY TROPIX GOLDEN MILPERO 3.5 OZ.            10089500
+300200PAPA FINGERLING MORADA/ROJA SUELTA                          00078500
+300201MANZANA ROMA  #  88                                         00046500
+300202CHILE PICO DE PAJARO SECO C/COLA                            00220000
+300203DULCE DE ALFAJOR                                            00095000
+300204CHILE PUYA                                                  00175000
+300205PERSIMO FUYU                                                00095000
+300206CHILE SERRANO                                               00026500
+300207CHILE PASILLA VERDE                                         00042500
+300208MANGO KENT                                                  00024500
+300209CHABACANO                                                   00260000
+300210PEPINO PERSA KG.                                            00175000
+300211TOMATE MIXED WINDSET ENSEMBLE 290 GR.                       10066500
+300212DATIL GOLDEN PALM KG.                                       00160000
+300213XOCONOSTLE                                                  00035500
+300214HONGO BLANCO SUELTO                                         00245000
+300215MANDARINA EN MALLA  S/SEMILLA KG.                           00105000
+300216CHAYOTE                                                     00038500
+300217MANZANA PINK LADY KG                                        00066500
+300218CHILE PICO DE PAJARO VERDE                                  00049500
+300219TORONJA VERDE ORO MELGOLD                                   00096500
+300220ALBAHACA ROJA                                               10021000
+300221CHICHARO LISO KG.                                           00215000
+300222CHILE CHILTEPIN                                             02400000
+300223NOPAL CON ESPINAS                                           00026500
+300224UVA PASA JUMBO                                              00105000
+300225CHOP SUEY SUELTO                                            00036500
+300226NARANJA NAVEL GRANDE S/SEMILLA KG.                          00056500
+300227FRESA BURBUJA AMERICANA                                     10118500
+300228NARANJA SANGRIA                                             00145000
+300229CILANTRO MAZO                                               10004000
+300230GUANABANA                                                   00082500
+300231MANZANA ENVY KG                                             00115000
+300232MANZANA JAZZ KG                                             00094500
+300233CIRUELA NEGRA KG.                                           00125000
+300234CIRUELA PASA CON HUESO                                      00110000
+300235EJOTE FRANCES KG.                                           00245000
+300236CIRUELA YOYOMA                                              00046500
+300237NARANJA CARA/CARA TORONJA                                   00064500
+300238LITCHI                                                      00235000
+300239PAPA CAMBRAY MORADA                                         00096500
+300240UVA VERDE KG.                                               00169000
+300241TOMATE UVA AMARILLO 298 GR.                                 10094500
+300242PAPA CHINA KG.                                              00085000
+300243PERSIMO HACHIYA                                             00095000
+300244FRIJOL NEGRO                                                00044500
+300245YUCA                                                        00069500
+300246COLIFLOR MEDIANO                                            10034500
+300247DURAZNO KG.                                                 00098500
+300248KIT JUGO VERDE CASI LISTO 300 GR.                           10027000
+300249HOJA DE PLATANO                                             00135000
+300250HONGO SHITAKE DESHIDRATADO 30 GR.                           10038500
+300251FRESA BURBUJA MEXICANA 454 GR.                              10082500
+300252HONGO DESHIDRATADO KG.                                      00890000
+300253ELOTE AMARILLO AMERICANO                                    10028500
+300254GRANADA ONE GOURMENT 600 GR.                                10098000
+300255ELOTE BLANCO AMERICANO                                      10028500
+300256CEBOLLA BLANCA PERLA                                        10072500
+300257CEBOLLA AMARILLA PERLA                                      10072500
+300258CEBOLLA MORADA PERLA                                        10078500
+300259CIRUELA PASA SIN HUESO KG.                                  00175000
+300260ALMENDRA  ENTERA                                            00315000
+300261SANDIA USA S/ SEMILLA MINI PERSONAL                         10076500
+300262CHILES MINI MORRON DOLCE BOLSA 454 GR.                      10125000
+300263CHAROLA C/VEGETALES CLASIC PARTY TRAY C/CHIP 40 OZ.         10076000
+300264MOSTAZA VERDE                                               10042500
+300265BLACKBERRY (ZARZAMORA) 170 GR                               10096500
+300266LECHUGA GOURMET MANTEQUILLA CON RAIZ                        10078500
+300267BERROS C/ RAIZ BOLSA                                        10079500
+300268AC. DANDELION                                               10062500
+300269NACIDO DE ALFALFA                                           10069500
+300270TOMATE CAMPARY COCKTAIL 454 GR.                             10120000
+300271MANGO ATAULGO MINI KG                                       00024500
+300272HONGO BLANCO PAQUETE C/12                                   10058500
+300273NACIDO BROCOLI ALFA VID                                     10021000
+300274FRUTAS FRESCAS P/PONCHE COLIMAN 750 GR.                     10089500
+300275DATILES DEL DESIERTO SURTIDO VARIADO NUTRI SNACK 250 GR.    10096500
+300276DATIL DEL DESIERTO ROLLO C/ALMENDRA 250 GR.                 10081000
+300277DATIL GOLDEN PALM MEDJOOL 225 GR.                           10049500
+300278ENSALADA ANTIOXIDANT BLEND GREEN BALANCE 454 GR.            10086800
+300279TORTILLA DE JICAMA COLIMAN 227 GR.                          10042000
+300280TOMATE CHERRY  CAMEO 298 GR.                                10069500
+300281TOMATE CHERRY GARDEN RIPE SWPER SWEET MEDLEY 283 GRR.       10044500
+300282TOMATE CHERRY AMARILLO12/1LB                                10105000
+300283EJOTE VERDE AMERICANO #1                                    00125000
+300284ESPARRAGO VERDE                                             10098500
+300285ESPINACA MAZO                                               10034500
+300286ENSALADA EARTTHBOUND ORGANIC BABY SPINICH 454 GR.           10115000
+300287ENSALADA EARTTHBOUND FARM SPRING MIX PRIMAVERA 454 GR.      10110000
+300288ENSALADA MR. LUCKY ITALIANA 284 GR.                         10034500
+300289QUELITE VERDE                                               10012000
+300290CHILE DEL CABO PADRON PEPPERS  200 GR.                      10125000
+300291CHILE DEL CABO SHISHITO 250 GR.                             10084500
+300292ALPISTE                                                     00044500
+300293CHILE CHIPOTLE SECO                                         00145000
+300294FRIJOL PERUANO                                              00074500
+300295HENO                                                        00058500
+300296MUSGO                                                       00155000
+300297FRIJOL PINTO                                                00038500
+300298FRUTA MIXTA                                                 00220000
+300299GARBANZO                                                    00049500
+300300DATIL GOLDEN PALM 450 GR                                    10082500
+300301GUAYABA                                                     00044500
+300302HABA                                                        00140000
+300303TOMATE PERA ROJO                                            10092500
+300304JAMAICA COLIMA                                              00135000
+300305LECHUGA  GOURMET MIXTA TUSCAN                               10125000
+300306APIO                                                        10044500
+300307JENGIBRE                                                    00195000
+300308CHAROLA GRANDE DE FRUTAS 3 PZAS                             11250000
+300309NUEZ DE CASTILLA KG.                                        00295000
+300310JICAMA                                                      00026500
+300311SEMILLA DE CHIA                                             00150000
+300312FRUTA CARAMBOLA KG.                                         00210000
+300313KIWI                                                        00165000
+300314LECHUGA BOLA                                                10028000
+300315LIMON PERSIA                                                00018500
+300316LECHUGA ROMANA                                              10028500
+300317LENTEJA                                                     00048500
+300318KALE LACINATO                                               10054500
+300319LIMON AMARILLO AMERICANO                                    00064500
+300320LIMON AMARILLO REGIONAL                                     00032500
