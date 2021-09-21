@@ -498,6 +498,7 @@ if($i==2){$cual='Mañana';$dia = suma_dias(date('d/m/Y'),1);}
         </div>
         <div class="modal-body" >
           <form action="<?= site_url('sistemas/sistemas/registrar_recurrente') ?>" method="POST" id="form_registro_recurrente">
+            <input type="hidden" class="input_id_recurrente">
             <textarea hidden class="text_rec_titulo" name="titulo"></textarea>
              <textarea hidden class="text_rec_limite" name="limite"></textarea>
               <textarea hidden class="text_rec_desc" name="descripcion_tarea"></textarea>
@@ -519,11 +520,14 @@ if($i==2){$cual='Mañana';$dia = suma_dias(date('d/m/Y'),1);}
         </div>
         <div class="modal-footer">
           <div class="row">
-            <div class="col-xs-6">
-              <button type="button" class="btn btn-default" data-dismiss="modal"> <i class="fa fa-reply" aria-hidden="true"></i> Regresar</button>
+            <div class="col-xs-4">
+              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-reply" aria-hidden="true"></i></button>
             </div>
-            <div class="col-xs-6">
-              <button type="button" class="btn btn-success" id="btn_guardar_check_recurrente"> <i class="fa fa-floppy" aria-hidden="true"></i> Guardar</button>
+            <div class="col-xs-4">
+              <button type="button" class="btn btn-warning" id="btn_refrescar_recurrente" fecha="<?= date('Y-m-d') ?>"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-xs-4">
+              <button type="button" class="btn btn-success" id="btn_guardar_check_recurrente"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
             </div>
         </div>
       </div>

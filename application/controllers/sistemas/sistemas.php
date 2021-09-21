@@ -156,6 +156,9 @@ class Sistemas extends CI_Controller {
 	function eliminar_recurrente(){
 		$this->sistemas_model->eliminar_recurrente($_POST['id_recurrente']);
 	}
+	function refrescar_recurrente(){
+		$this->sistemas_model->refrescar_recurrente($_POST['id_recurrente'],$_POST['fecha']);
+	}
 	function duplicar_recurrente(){
 		//creo recurrente
 		$recurrente1 = $this->sistemas_model->get_recurrente($_POST['id_recurrente']);

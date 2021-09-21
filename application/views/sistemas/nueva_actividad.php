@@ -1,4 +1,4 @@
-<form action="<?= site_url('sistemas/sistemas/alta_actividad'); ?>" method="post" autocomplete="off" enctype="multipart/form-data">
+<form action="<?= site_url('sistemas/sistemas/alta_actividad'); ?>" id="form_alta_actividad" method="post" autocomplete="off" enctype="multipart/form-data">
 <input type="hidden" name="fecha_fin" value="<?= date('Y-m-d'); ?>">
 <input type="hidden" name="id_departamento" value="<?= $departamento ?>">
 	<div class="row">
@@ -76,7 +76,7 @@
 		<div class="col col-sm-12">
 			<label class="padding_top_20">
 				Observaciones:
-				<textarea class="form-control" rows="5" name="observaciones"></textarea>
+				<textarea class="form-control" rows="5" name="observaciones"><?php if(isset($_POST['observacion'])&&$_POST['observacion']!=""){ echo $_POST['observacion'];}?></textarea>
 			</label>
 		</div>
 		<div class="col col-sm-12 padding_top_20" >

@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="https://ferbis.com/PWA/actividades/assets/css/font-awesome.min.css">
 
 
+
 <style type="text/css">
     .label_limite{
       position: absolute;
@@ -113,31 +114,8 @@
     $id_personal=0;
   }
   foreach($rec->campos as $campo){
-    $boton_actividad = "<div style='text-align:right'><a class='btn btn-primary boton_recurrente'  departamento='".$departamento."' id_personal='".$id_personal." ' titulo='".$campo->titulo."' descripcion='".$campo->subtitulo."'><i class='fa fa-tag' aria-hidden='true'></i></a></div>";
-
-    if($campo->subtitulo!=""){ $campo->subtitulo = "<br>".$campo->subtitulo."<br>"; }
     if($campo->tipo=="0"&&$campo->lectura=="1"){$aprobacion++;}
     if($campo->tipo=="1"&&($campo->lectura>=$campo->min&&$campo->lectura<=$campo->max)){$aprobacion++;}
-    if($campo->tipo=="0"&&$campo->lectura=="0"){
-
-       $mensaje.="<br>".$boton_actividad.
-      " <div class='recuadro_insidencia'><span class='label label-default'>".$campo->fecha2."</span>".
-      " <span class='label label-danger'> X </span> ".
-      " &nbsp<b> ".$campo->titulo."</b>".$campo->subtitulo.
-      " <span class='label label-success'>".$campo->responsable."</span>".
-      $campo->observacion."</div>";
-      
-    }
-    if($campo->tipo=="1"&&$campo->lectura!=""&&($campo->lectura<$campo->min||$campo->lectura>$campo->max)){
-      $mensaje.="<br>".$boton_actividad.
-      " <div class='recuadro_insidencia'><span class='label label-default'>".$campo->fecha2."</span>".
-      " <span class='label label-primary'>".$campo->lectura."</span>".
-      " <b> ".$campo->titulo."</b>".$campo->subtitulo.
-      " <span class='label label-success'>".$campo->responsable."</span>".
-      " <span class='label label-danger'> Fuera de rango (".$campo->min."-".$campo->max.")</span>".
-      $campo->observacion."</div>";
-    }
-    
   }
   if($mensaje==""){
     $mensaje="Actividad sin incidencias <i class='fa fa-thumbs-o-up' aria-hidden='true'></i>";
@@ -209,9 +187,9 @@
       </div>
       
     </div>
-  </div>
+</div>
 
-  <div class="modal fade" id="modal_show_recurrente" role="dialog">
+  <div class="modal fade" id="modal_show_recurrente" role="dialog" >
     <div class="modal-dialog">
     
       <!-- CONTENIDO DE MODAL-->
@@ -233,9 +211,11 @@
 
 
 
+  <?php if(!isset($_POST['no_assets'])){ ?>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <?php } ?>
 
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
   $(document).ready(function() {
@@ -245,14 +225,16 @@
     console.log(location.hostname);
     var base_url = location.hostname;
     if(base_url=='192.168.1.10')
-      base_url="http://192.168.1.10/ferbis-interno/index.php/sistemas/sistemas/";
+      base_url="http://192.168.1.10/ferbis-interno/index.php/sistemas/sistemas";
     if(base_url=="ferbis.com"){
-      base_url="https://ferbis.com/PWA/actividades/index.php/sistemas/sistemas/alta_actividad_view/";
+      base_url="https://ferbis.com/PWA/actividades/index.php/APIController";
     }
 
 
 
     $(".panel_recurrente").click(function(){
+      $("#modal_show_recurrente").modal("show");
+      $("#modal_show_recurrente_body").html(loader());
       $.post(base_url+"/show_recurrente",{
         departamento:$(this).attr('departamento'),
         fecha1:$(this).attr('fecha1'),
@@ -260,7 +242,6 @@
         recurrente:$(this).attr('recurrente')
       },function(r){
         $('#modal_show_recurrente_body').html(r);
-        $("#modal_show_recurrente").modal("show");
       })
     })
 
@@ -286,28 +267,38 @@
           return panelTitleText.indexOf(val) < 0;
       }).slideUp(800);
     });
-    
+    $(document).on('submit','#form_alta_actividad',function(e){
+      e.preventDefault();
+      var bu = $(this).attr('action');
+      if(location.hostname=="ferbis.com"){bu="https://ferbis.com/PWA/actividades/index.php/APIController/alta_actividad";}
+      var data = $(this).serialize();
+      $('#modal_actividades').modal("hide");
+     $.post(bu,data,function(){
+        alert("Actividad creada!");
+      })
+    })
     console.log(base_url);
     $(document).on("click",".boton_recurrente",function(){
-      $('#modal_actividades').modal("show");
-      $('#modal_actividades_body').html(loader());
-      $.post(base_url+"/alta_actividad_view"+$(this).attr('departamento'),{
-        id_personal:$(this).attr('id_personal'),
-        titulo:$(this).attr('titulo'),
-        descripcion:$(this).attr('descripcion'),
-      },function(r){
-        $('#modal_actividades_body').html(r);
-      })
+      $('#modal_show_recurrente').modal('hide');
+      var departamento = $(this).attr('departamento');
+      var data = {
+          id_personal:$(this).attr('id_personal'),
+          titulo:$(this).attr('titulo'),
+          descripcion:$(this).attr('descripcion'),
+          observacion:$(this).attr('observacion')
+        }
+      setTimeout(function() {
+        $('#modal_actividades').modal("show");
+        $('#modal_actividades_body').html(loader());
+        $.post(base_url+"/alta_actividad_view/"+departamento,data,function(r){
+          $('#modal_actividades_body').html(r);
+        })
+      }, 500);
+      
     })
 
     function loader(){
-      var loader="<div class='col col-lg-12 loader_ocu'><div class='spinner'>"+
-      "<div class='rect1'>"+
-      "</div><div class='rect2'>"+
-      "</div><div class='rect3'>"+
-      "</div><div class='rect4'>"+
-      "</div><div class='rect5'>"+
-      "</div></div></div>";
+      var loader="<div class='loader'>Loading...</div>";
       return loader;
     }
 

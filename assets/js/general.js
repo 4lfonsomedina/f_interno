@@ -319,6 +319,7 @@ jQuery(document).ready(function($) {
 			$(".text_rec_titulo").html(rec.titulo);
 			$(".text_rec_limite").html(rec.hora_limite);
 			$(".text_rec_desc").html(rec.descripcion);
+			$(".input_id_recurrente").val(rec.id_recurrente);
 			$("#contenedor_campos_2").html("");
 			$.each(rec.campos, function(i,campo){
 				if(campo.lectura==null){campo.lectura='';}
@@ -351,6 +352,15 @@ jQuery(document).ready(function($) {
 		}
 	})
 
+	$("#btn_refrescar_recurrente").click(function(){
+		if(!confirm("Estas seguro de que deseas borrar la captura de esta tarea recurrente?")){ return; }
+		var fecha = $(this).attr('fecha');
+		var id_recurrente = $(".input_id_recurrente").val();
+		$.post("./sistemas/refrescar_recurrente", {id_recurrente:id_recurrente,fecha:fecha},function(){
+			location.reload();
+		});
+	})
+
 	$("#btn_guardar_check_recurrente").click(function(){
 		var filtro=true;
 			$('.valor_rec').each(function(i,e){if($(e).val()==''){ filtro=false; }})
@@ -358,7 +368,8 @@ jQuery(document).ready(function($) {
 			//$("#form_registro_recurrente").submit();
 			//$("#v").ajaxForm();
 			$.post($('#form_registro_recurrente').attr('action'), $('#form_registro_recurrente').serialize(),function(){
-				$("#modal_check_recurrente").modal('hide');
+				//$("#modal_check_recurrente").modal('hide');
+				location.reload();
 			});
 		}else{alert("No puede dejar campos vacios");}
 	})

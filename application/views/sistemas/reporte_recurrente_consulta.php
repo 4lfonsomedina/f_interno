@@ -13,7 +13,7 @@
     $id_personal=0;
   }
   foreach($rec->campos as $campo){
-    $boton_actividad = "<div style='text-align:right'><a class='btn btn-primary boton_recurrente'  departamento='".$departamento."' id_personal='".$id_personal." ' titulo='".$campo->titulo."' descripcion='".$campo->subtitulo."'><i class='fa fa-tag' aria-hidden='true'></i></a></div>";
+    $boton_actividad = "<div style='text-align:right'><a class='btn btn-primary boton_recurrente'  departamento='".$departamento."' id_personal='".$id_personal." ' titulo='".$campo->titulo."' observacion='".$campo->subtitulo."\n".$campo->observacion."'><i class='fa fa-tag' aria-hidden='true'></i></a></div>";
 
     if($campo->subtitulo!=""){ $campo->subtitulo = "<br>".$campo->subtitulo."<br>"; }
     if($campo->tipo=="0"&&$campo->lectura=="1"){$aprobacion++;}
@@ -49,7 +49,7 @@
 
 
    
-          <b><?= $rec->titulo ?></b><span class="pull-right"></span>
+          <h3><?= $rec->titulo ?></h3><span class="pull-right"></span>
           <span class="label label-<?= $terminada ?> label_limite " style="font-size: 16px;">
             <i class="fa fa-clock-o" aria-hidden="true"></i> <?= formato_hora($rec->limite) ?>
           </span>

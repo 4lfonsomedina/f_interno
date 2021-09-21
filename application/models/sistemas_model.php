@@ -113,6 +113,11 @@ class Sistemas_model extends CI_Model {
 	function registrar_recurrente($data){
 		$this->db->insert_batch('recurrente_datos', $data);
 	}
+	function refrescar_recurrente($id_recurrente,$fecha){
+		$this->db->where("id_recurrente",$id_recurrente);
+		$this->db->where("fecha",$fecha);
+		$this->db->delete("recurrente_datos");
+	}
 	//envio de notificacion por actividad fuera de rango o no checkeada
 	function notificacion_actividad($id_departamento,$titulo,$recurrentes){
 		//construccion de reporte de actividad
